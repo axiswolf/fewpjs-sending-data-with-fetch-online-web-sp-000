@@ -19,10 +19,11 @@ let configObj = {
   })
   .then(function(object) {
     console.log(object);
-    document.write(object.id)
+    document.getElementById("result").innerText = (object.id)
   })
   .catch(function(error) {
     alert("Bad things! Ragnarők!");
     console.log(error.message);
+    document.getElementById("result").innerText = error.message
   });
 }
