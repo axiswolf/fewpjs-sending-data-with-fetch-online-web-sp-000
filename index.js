@@ -20,5 +20,5 @@ function submitData(name, email) {
   .catch(function(error) {
   alert("Unauthorized Access");
   console.log(error.message);
-  );
+  )};
 }
