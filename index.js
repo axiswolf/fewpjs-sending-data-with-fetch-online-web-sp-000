@@ -1,8 +1,9 @@
-let formData = {
+function submitData(name, email) { 
+  let formData = {
   name: name,
   email: email
 };
-
+ 
 let configObj = {
   method: "POST",
   headers: {
@@ -12,7 +13,7 @@ let configObj = {
   body: JSON.stringify(formData)
 };
 
-  function submitData(fetch("http://localhost:3000/users", configObj)){
+  fetch("http://localhost:3000/users", configObj)
   .then(function(response) {
     return response.json();
   })
@@ -22,4 +23,5 @@ let configObj = {
   .catch(function(error) {
     alert("Bad things! Ragnarők!");
     console.log(error.message);
-  })};
+  });
+}
