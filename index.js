@@ -1,25 +1,21 @@
-// Add your code here
+let formData = {
+  name: name,
+  email: email
+};
+ 
 let configObj = {
   method: "POST",
   headers: {
     "Content-Type": "application/json",
     "Accept": "application/json"
   },
-  body: JSON.stringify({
-    name: name,
-    email: email
-  })
+  body: JSON.stringify(formData)
 };
-function submitData(name, email) {
-  fetch("http://localhost:3000/users", configObj)
+ 
+fetch("http://localhost:3000/users", configObj)
   .then(function(response) {
-  return response.json();
+    return response.json();
   })
   .then(function(object) {
-  console.log(object);
-  })
-  .catch(function(error) {
-  alert("Unauthorized Access");
-  console.log(error.message);
-  )};
-};
+    console.log(object);
+  });
