@@ -19,6 +19,7 @@ let configObj = {
   })
   .then(function(object) {
     console.log(object);
+    document.write(object.id)
   })
   .catch(function(error) {
     alert("Bad things! Ragnarők!");
