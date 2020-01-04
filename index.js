@@ -1,4 +1,8 @@
 // Add your code here
+let submitData = {
+  
+};
+
 fetch("http://localhost:3000/users", {
   method: "POST",
   headers: {
