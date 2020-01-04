@@ -22,4 +22,4 @@ function submitData(name, email) {
   alert("Unauthorized Access");
   console.log(error.message);
   )};
-}
+};
