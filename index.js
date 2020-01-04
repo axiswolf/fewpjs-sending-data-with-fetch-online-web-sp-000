@@ -5,8 +5,5 @@ fetch("http://localhost:3000/users", {
     "Content-Type": "application/json",
     "Accept": "application/json"
   },
-  body: JSON.stringify({
-    dogName: "Byron",
-    dogBreed: "Poodle"
-  },
+  body: JSON.stringify(formData)
 });
