@@ -10,5 +10,15 @@ function submitData(name, email) {
       name: name,
       email: email
     })
-  });
+  }
+  .then(function(response) {
+  return response.json();
+  })
+  .then(function(object) {
+  console.log(object);
+  })
+  .catch(function(error) {
+  alert("Unauthorized Access");
+  console.log(error.message);
+  );
 }
