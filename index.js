@@ -1,13 +1,14 @@
 // Add your code here
-let submitData = {
-
-};
-
-fetch("http://localhost:3000/users", {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "Accept": "application/json"
-  },
-  body: JSON.stringify(formData)
-});
+function submitData(name, email) {
+  fetch("http://localhost:3000/users", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+    body: JSON.stringify({
+      name: name,
+      email: email
+    })
+  });
+}
