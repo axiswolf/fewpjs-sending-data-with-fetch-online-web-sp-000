@@ -2,7 +2,7 @@ let formData = {
   name: name,
   email: email
 };
- 
+
 let configObj = {
   method: "POST",
   headers: {
