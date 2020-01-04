@@ -1,5 +1,5 @@
 function submitData(name, email){
-}
+
 
   let configObj = {
     method: "POST",
