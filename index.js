@@ -22,7 +22,7 @@ let configObj = {
     document.getElementById("result").innerText = (object.id)
   })
   .catch(function(error) {
-    alert("Bad things! Ragnarők!");
+    alert("Unauthorized Access");
     console.log(error.message);
     document.getElementById("result").innerText = error.message
   });
