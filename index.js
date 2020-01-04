@@ -9,7 +9,7 @@ let configObj = {
     name: name,
     email: email
   })
-}
+};
 function submitData(name, email) {
   fetch("http://localhost:3000/users", configObj)
   .then(function(response) {
